@@ -9,22 +9,29 @@ const Projects = () => {
     {
       id: '1',
       title: 'Custom Digital Smartwatch',
-      description: 'Led 18-person team to build fully functional smartwatch using Raspberry Pi Zero',
-      longDescription: 'Led an 18-person team as Software Team Lead and Project Lead for Theta Tau to design, build, and deploy a fully functional smartwatch using Raspberry Pi Zero. Developed custom applications in Python and Pygame including games, utilities, and system integrations. Managed version control with GitHub and coordinated team contributions.',
+      description: 'Xi-Smartwatch is a touchscreen smartwatch developed by the Xi Class of Theta Tau, featuring three primary applications: a Timer & Stopwatch App with reliable clock functionalities, a Random Number Generator utility app for games and decision-making, and Golden Pony, a Flappy Bird-inspired mini-game designed to boost be a fun way to relieve stress for college students.',
       technologies: ['Python', 'Pygame', 'Raspberry Pi', 'Linux', 'Bash', 'Git'],
-      githubUrl: 'https://github.com/Beusted/smartwatch-project',
+      githubUrl: 'https://github.com/Beusted/Xi-Smartwatch',
       featured: true,
-      completedAt: '2025-04-01'
+      completedAt: '2025-04-29'
     },
     {
       id: '2',
       title: 'Full-Stack ERP Platform',
-      description: 'Scalable enterprise platform achieving 83% code reduction through modular architecture',
-      longDescription: 'Designed and implemented scalable full-stack ERP platform using Next.js/React/TypeScript at NTL Precision. Engineered high-performance database layer with PostgreSQL/Supabase, achieving 10x query performance improvement through optimization. Delivered responsive design with real-time search and automated workflows.',
+      description: 'I created a scalable enterprise platform with modular architecture to streamline business operations and improve efficiency. It features a user-friendly interface, real-time data synchronization, and advanced reporting capabilities.',
       technologies: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Supabase', 'Tailwind CSS'],
       githubUrl: 'https://github.com/Beusted/erp-platform',
       featured: true,
       completedAt: '2025-08-01'
+    },
+    {
+      id: '3',
+      title: 'ZeroSpam',
+      description: 'Developed a comprehensive email spam filtering system as a capstone project for computer science coursework. Built an interactive web application using Streamlit that implements machine learning classification algorithms to automatically detect and filter spam emails.',
+      technologies: ['Python', 'Streamlit', 'Scikit-learn', 'pandas', 'numpy', 'NLTK', 'Naive Bayes', 'Git'],
+      githubUrl: 'https://github.com/Beusted/ZeroSpam',
+      featured: true,
+      completedAt: '2025-05-22'
     }
   ]
 

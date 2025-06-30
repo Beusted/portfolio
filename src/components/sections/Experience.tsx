@@ -10,7 +10,7 @@ const Experience = () => {
       id: '1',
       company: 'NTL Precision',
       position: 'Software Engineer Intern - Data Systems',
-      startDate: '2025-06-01',
+      startDate: '2025-06-02',
       endDate: '2025-08-31',
       description: 'Designed and implemented scalable full-stack ERP platform using Next.js/React/TypeScript, achieving significant performance improvements and code reduction.',
       technologies: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Supabase'],
@@ -23,25 +23,10 @@ const Experience = () => {
     },
     {
       id: '2',
-      company: 'CPSLO AI Summer Camp',
-      position: 'AWS AI Summer Camp Participant',
-      startDate: '2025-07-01',
-      endDate: '2025-08-31',
-      description: 'Leveraged AWS ML Tools including AWS Bedrock to solve real-world campus issues and develop AI/ML solutions.',
-      technologies: ['AWS', 'AWS Bedrock', 'Python', 'Machine Learning', 'AI'],
-      achievements: [
-        'Developed AI solutions for real-world campus problems',
-        'Gained hands-on experience with AWS ML services and tools',
-        'Applied machine learning concepts to practical use cases',
-        'Collaborated with peers on innovative AI projects'
-      ]
-    },
-    {
-      id: '3',
       company: 'Theta Tau, Phi Epsilon Chapter',
       position: 'PNM President',
       startDate: '2025-02-01',
-      endDate: '2025-05-31',
+      endDate: '2025-05-25',
       description: 'Led as central support figure for the team, guiding peers and empowering others to succeed through consistent leadership.',
       technologies: ['Leadership', 'Project Management', 'Communication', 'Team Building'],
       achievements: [
