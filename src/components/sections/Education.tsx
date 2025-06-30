@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 bg-warm-beige dark:bg-gray-900">
+    <section id="education" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const Education = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+          <div className="bg-soft-beige dark:bg-gray-800 rounded-lg shadow-lg p-8">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">

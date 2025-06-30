@@ -25,16 +25,6 @@ const Projects = () => {
       githubUrl: 'https://github.com/Beusted/erp-platform',
       featured: true,
       completedAt: '2025-08-01'
-    },
-    {
-      id: '3',
-      title: 'AI/ML Portfolio Projects',
-      description: 'Various machine learning projects using PyTorch and modern ML frameworks',
-      longDescription: 'Collection of AI/ML projects developed during coursework and AWS AI Summer Camp. Includes computer vision applications using OpenCV and MediaPipe, data analysis with Pandas and NumPy, and deep learning models with PyTorch.',
-      technologies: ['Python', 'PyTorch', 'OpenCV', 'MediaPipe', 'Pandas', 'NumPy', 'AWS Bedrock'],
-      githubUrl: 'https://github.com/Beusted/ml-projects',
-      featured: false,
-      completedAt: '2025-08-01'
     }
   ]
 

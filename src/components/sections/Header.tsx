@@ -22,7 +22,7 @@ const Header = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Resume', href: personalData.hero.resumeUrl },
+    { name: 'Resume', href: 'https://github.com/Beusted/resume/blob/main/brianngo_resume_fall2025.pdf' },
   ]
 
   return (

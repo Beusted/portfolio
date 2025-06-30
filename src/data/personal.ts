@@ -9,34 +9,30 @@ export const personalData = {
   social: {
     github: 'https://github.com/Beusted',
     linkedin: 'https://www.linkedin.com/in/briantngo/',
-    twitter: 'https://twitter.com/ngobrian',
   },
   
   // Hero section
   hero: {
-    greeting: "Hi, I'm",
-    description: 'Computer Science student passionate about full-stack development, AI/ML, and building scalable solutions. Expected graduation May 2026 from Cal State Fullerton.',
-    resumeUrl: '/brianngo_resume_fall2025.pdf'
+    greeting: "Hej, I'm",
   },
   
   // About section
   about: {
     title: 'About Me',
-    description: `I'm a Computer Science student at Cal State Fullerton with a passion for full-stack development and AI/ML. 
-    I love building scalable solutions and leading technical teams to deliver innovative projects.`,
-    
+        
     journey: [
-      `Currently pursuing my Bachelor's in Computer Science at California State University - Fullerton, 
-      with an expected graduation date of May 2026. My coursework includes Algorithm Engineering, 
-      Software Engineering, AI, Database Systems, and Operating Systems.`,
+      `I'm currently pursuing my Bachelor's in Computer Science at California State University, Fullerton, 
+      where I’m developing a strong foundation in software engineering, AI/ML, and innovative problem-solving.
+      I’m passionate about using technology to drive innovation and tackle complex challenges, and I'm always 
+      eager to learn new skills to stay ahead in our ever-evolving digital world.`,
       
-      `I have hands-on experience in full-stack development through my internship at NTL Precision, 
-      where I built scalable ERP platforms using Next.js, React, and PostgreSQL. I also have experience 
-      with AI/ML tools through AWS summer programs and leadership experience as PNM President of Theta Tau.`,
+      `Every day I strive to grow, learning from my experiences and pushing myself to become a better version of
+      who I was yesterday. I enjoy opportunities that allow me to work collaboratively, contribute to exciting 
+      projects, and make a meaningful impact. I’m also known for my loyalty and commitment, always standing by my 
+      team and my goals through every challenge.`,
       
-      `I'm passionate about combining technical expertise with leadership skills, whether it's leading 
-      an 18-person team to build a custom smartwatch or optimizing database performance to achieve 10x 
-      improvements in query latency. I'm always excited to tackle new challenges and learn emerging technologies.`
+      `When I'm not immersed in technology, you'll likely find me dancing, listening to music, attending concerts 
+      and festivals, exploring new restaurants, and nature destinations :)`
     ]
   },
   
