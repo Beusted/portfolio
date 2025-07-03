@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { MapPin, Landmark, BookText, GraduationCap } from 'lucide-react'
 
 const Education = () => {
   return (
@@ -39,11 +40,11 @@ const Education = () => {
                 </p>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
                   <div className="flex items-center">
-                    <span className="mr-1">📅</span>
+                    <GraduationCap className="w-5 h-5 mr-2" />
                     Expected Graduation: May 2026
                   </div>
                   <div className="flex items-center">
-                    <span className="mr-1">📍</span>
+                    <MapPin className="w-4 h-4 mr-1" />
                     Fullerton, CA
                   </div>
                 </div>
@@ -53,7 +54,7 @@ const Education = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                  <span className="mr-2">📚</span>
+                <BookText className="w-5 h-5 mr-2" />
                   Relevant Coursework
                 </h4>
                 <ul className="space-y-2">
@@ -82,7 +83,7 @@ const Education = () => {
 
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                  <span className="mr-2">🏛️</span>
+                  <Landmark className="w-5 h-5 mr-2" />
                   Organizations
                 </h4>
                 <ul className="space-y-2">

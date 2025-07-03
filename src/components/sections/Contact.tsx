@@ -55,7 +55,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {contactLinks.map((link) => (
               <motion.a
                 key={link.name}
@@ -64,7 +64,7 @@ const Contact = () => {
                 rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 h-[116px] ${link.subtext ? '' : 'justify-center'}`}
+                className={`flex flex-col items-center p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 min-h-[116px] ${link.subtext ? '' : 'justify-center'}`}
               >
                 <div className="text-forest-green dark:text-white mb-2">
                   {link.icon}
@@ -73,7 +73,7 @@ const Contact = () => {
                   {link.name}
                 </span>
                 {link.subtext && (
-                  <span className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                  <span className="text-xs text-gray-600 dark:text-gray-400 mt-1 text-center break-words break-all px-2">
                     {link.subtext}
                   </span>
                 )}
