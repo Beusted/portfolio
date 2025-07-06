@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { personalData } from '@/data/personal'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -38,8 +39,17 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-xl font-bold text-white hover:text-gray-300 transition-colors">
-              {personalData.name}
+            <Link href="/" className="flex items-center space-x-2 text-white hover:text-gray-300 transition-colors">
+              <Image
+                src="/images/icon/dinosaur.jpg"
+                alt="Site icon"
+                width={28}
+                height={28}
+                className="rounded-full"
+              />
+              <span className="text-xl font-bold">
+                {personalData.name}
+              </span>
             </Link>
           </div>
 

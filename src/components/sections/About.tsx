@@ -29,7 +29,7 @@ const About = () => {
             className="relative w-80 h-80 mx-auto"
           >
             <Image
-              src="/images/mirrorselfie.jpg"
+              src="/images/homepage/mirrorselfie.jpg"
               alt="Brian Ngo mirror selfie"
               fill
               className="object-contain rounded-2xl shadow-lg scale-110"

@@ -165,7 +165,7 @@ const Experience = () => {
           className="text-center mt-16"
         >
           <a
-            href="https://github.com/Beusted/resume/blob/main/brianngo_resume_fall2025.pdf"
+            href="/brianngo_resume_2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 bg-forest-green text-white rounded-lg hover:bg-forest-green-light transition-colors font-medium"

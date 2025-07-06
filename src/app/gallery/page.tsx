@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 
 // Retrieve image filenames from the public/images directory at request/build time.
 function getImageFiles() {
-  const imagesDir = path.join(process.cwd(), 'public', 'images');
+  const imagesDir = path.join(process.cwd(), 'public', 'images', 'gallery');
   // Filter for common image extensions
   return fs
     .readdirSync(imagesDir)
@@ -38,13 +38,13 @@ export default function GalleryPage() {
             {/\.heic$/i.test(file) ? (
               // Fallback to native <img> for HEIC files, since Next.js Image optimization doesn't support them
               <img
-                src={`/images/${file}`}
+                src={`/images/gallery/${file}`}
                 alt={file.replace(/[-_]/g, ' ').split('.')[0]}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-out hover:scale-105"
               />
             ) : (
               <Image
-                src={`/images/${file}`}
+                src={`/images/gallery/${file}`}
                 alt={file.replace(/[-_]/g, ' ').split('.')[0]}
                 fill
                 sizes="(min-width: 1024px) 200px, (min-width: 640px) 33vw, 50vw"
