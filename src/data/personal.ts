@@ -22,13 +22,13 @@ export const personalData = {
         
     journey: [
       `I'm currently pursuing my Bachelor's in Computer Science at California State University, Fullerton, 
-      where I’m developing a strong foundation in software engineering, AI/ML, and innovative problem-solving.
-      I’m passionate about using technology to drive innovation and tackle complex challenges, and I'm always 
+      where I'm developing a strong foundation in software engineering, AI/ML, and innovative problem-solving.
+      I'm passionate about using technology to drive innovation and tackle complex challenges, and I'm always 
       eager to learn new skills to stay ahead in our ever-evolving digital world.`,
       
       `Every day I strive to grow, learning from my experiences and pushing myself to become a better version of
       who I was yesterday. I enjoy opportunities that allow me to work collaboratively, contribute to exciting 
-      projects, and make a meaningful impact. I’m also known for my loyalty and commitment, always standing by my 
+      projects, and make a meaningful impact. I'm also known for my loyalty and commitment, always standing by my 
       team and my goals through every challenge.`,
       
       `When I'm not immersed in technology, you'll likely find me dancing, listening to music, attending concerts 
@@ -39,20 +39,20 @@ export const personalData = {
   // Skills
   skills: [
     {
-      category: 'Frontend',
-      technologies: ['React 18', 'Next.js 14', 'TypeScript', 'JavaScript', 'Tailwind CSS']
+      category: 'Languages',
+      technologies: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C++', 'SQL']
     },
     {
-      category: 'Backend',
-      technologies: ['Node.js', 'Python', 'Java', 'C++', 'RESTful APIs', 'PostgreSQL', 'Supabase']
-    },
-    {
-      category: 'AI/ML & Data',
+      category: 'ML/Data Science',
       technologies: ['PyTorch', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'OpenCV', 'MediaPipe']
     },
     {
+      category: 'Full-Stack & Cloud',
+      technologies: ['Node.js', 'PostgreSQL', 'Supabase', 'RESTful APIs', 'React 18', 'Next.js 14']
+    },
+    {
       category: 'Tools & Platforms',
-      technologies: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma', 'Jupyter Notebook']
+      technologies: ['Git', 'Docker', 'AWS', 'Vercel', 'Jira', 'Scrum', 'Agile', 'Jupyter Notebook', 'Figma', 'Tailwind CSS']
     }
   ],
   

@@ -85,27 +85,27 @@ const Projects = () => {
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-forest-green rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-bold text-white mb-2">
                       {project.title}
                     </h3>
-                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    <div className="flex items-center text-sm text-white/80 mb-2">
                       <Calendar className="w-4 h-4 mr-1" />
                       {new Date(project.completedAt).toLocaleDateString()}
                     </div>
                   </div>
                   {project.featured && (
-                    <span className="bg-forest-green text-white px-2 py-1 rounded-full text-sm font-medium">
+                    <span className="dark:bg-[#3c7a4d]/30 text-white px-2 py-1 rounded-full text-sm font-medium">
                       Featured
                     </span>
                   )}
                 </div>
                 
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-white/90 mb-4">
                   {project.description}
                 </p>
                 
@@ -113,7 +113,7 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-forest-green text-white px-3 py-1 rounded-full text-sm"
+                      className="dark:bg-[#3c7a4d]/30 text-white px-3 py-1 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -126,7 +126,7 @@ const Projects = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 dark:text-gray-300 hover:text-forest-green dark:hover:text-white transition-colors"
+                      className="flex items-center text-white hover:text-white/80 transition-colors"
                     >
                       <Github className="w-4 h-4 mr-1" />
                       Code
@@ -137,7 +137,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-600 dark:text-gray-300 hover:text-forest-green dark:hover:text-white transition-colors"
+                      className="flex items-center text-white hover:text-white/80 transition-colors"
                     >
                       <ExternalLink className="w-4 h-4 mr-1" />
                       Live Demo

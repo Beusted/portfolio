@@ -1,0 +1,202 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks,pdfnewwindow=true,pdfwindowui=true,pdffitwindow=true]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Brian Ngo} \\ \vspace{1pt}
+    \href{mailto:ngobrian17@gmail.com}{\underline{ngobrian17@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/briantngo/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Beusted/}{\underline{GitHub}} $|$
+    \href{https://www.ngobrian.dev/}
+    {\underline{Portfolio}} $|$
+    {\ Bay Area}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University - Fullerton} {} {Bachelors in Computer Science}{Expected Graduation: 2026} 
+
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK-----------
+\section{Relevant Coursework} 
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Computer Science}{: Artificial Intelligence, Algorithm Engineering, Software Engineering, Compilers and Languages, OS, Database and Applications, Multivariable Calculus, Linear Algebra and Diff Equations, Statistics} \\
+    }}
+ \end{itemize}
+ 
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Custom Digital Smartwatch} $|$ \emph{Software Team Lead, Project Lead, Theta Tau}}{Feb 2025 - April 2025}
+          \resumeItemListStart
+            \resumeItem{
+    Led an 18-person team to design, build, and deploy a fully functional smartwatch using Raspberry Pi Zero, delivering on a strict 10-week timeline.
+            }
+            \resumeItem{
+                Organized work into structured phases (research, production, optimization, deployment) and ran weekly/biweekly Scrum meetings to set goals, resolve blockers, and maintain steady progress.
+            }
+            \resumeItem{
+                Solved critical hardware and software issues (touchscreen drivers, Raspberry Pi OS) using Bash shell scripting, demonstrating strong technical leadership and problem-solving under pressure.
+            }
+            \resumeItem{
+                Developed custom smartwatch applications in Python and Pygame, including a Flappy Bird-style game, a stopwatch/timer, and a random number generator.
+            }
+            \resumeItem{
+                Managed version control with GitHub (branching, merging, pull requests) to coordinate team contributions and ensure seamless system integration.
+            }
+
+          \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+      \resumeSubheading
+          {Software Engineer Intern - Data Systems}{June 2025 - August 2025}
+          {NTL Precision}{San Jose, CA}
+          \resumeItemListStart
+            \resumeItem{Designing and implementing scalable full-stack ERP platform using Next.js/React/TypeScript, achieving 83\% code reduction through modular architecture and component reusability across order management, production, and inventory systems.
+            }
+            
+            \resumeItem {Engineering high-performance database layer with PostgreSQL/Supabase, eliminating N+1 queries through batch fetching and implementing Map-based lookup tables.
+            }
+            
+            \resumeItem {Delivering end-to-end user experience with responsive design, real-time search algorithms, and automated workflow orchestration, driving operational efficiency across manufacturing pipeline.
+            }
+        \resumeItemListEnd
+        
+     \resumeSubheading
+      {PNM President}{Feb 2025 - May 2025}
+      {Theta Tau, Phi Epsilon Chapter}{Fullerton, CA}
+          \resumeItemListStart
+            \resumeItem{
+            Led as the central support figure for the team, guiding peers, answering questions, and empowering others to succeed through consistent, approachable leadership. 
+            }
+            \resumeItem{
+            Acted as the primary liaison between the team and organizational leadership, ensuring transparent communication and alignment on goals and expectations. 
+            }
+            \resumeItem{
+            Collaborated closely with fellow board members, actively sharing responsibilities and delegated key initiatives to ensure cohesive execution and collective success.
+            }
+      \resumeItemListEnd
+      
+     \resumeSubheading
+      {Hackathon Participant}{April 12-13, 2025}
+      {FullyHacks (CSUF Hackathon)}{Fullerton, CA}
+          \resumeItemListStart
+            \resumeItem{Completed a 24-hour hackathon, balancing independent project development with active workshop participation, where I gained hands-on experience with tools like AWS.
+            }
+            \resumeItem{
+            Focused on rapid learning, technical skill-building, and hands-on application under time constraints. 
+            }
+            \resumeItem{
+            Developed a real-time gesture recognition system using OpenCV and MediaPipe to map dynamic hand gestures to keyboard or mouse inputs.
+            }
+            
+      \resumeItemListEnd
+        
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, Java, C++, SQL} \\
+     \textbf{ML/Data Science}{: PyTorch, Scikit-Learn, Pandas, NumPy, Matplotlib, OpenCV, MediaPipe} \\
+     \textbf{Full-Stack \& Cloud}{: Node.js, PostgreSQL, Supabase, RESTful APIs, React 18, Next.js 14} \\
+     \textbf{Tools \& Platforms}{: Git, Docker, AWS, Vercel, Jira, Scrum, Agile, Jupyter Notebook, Figma, Tailwind CSS} \\
+    }}
+ \end{itemize}
+\end{document}

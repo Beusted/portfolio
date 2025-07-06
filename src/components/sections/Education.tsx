@@ -29,16 +29,16 @@ const Education = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-soft-beige dark:bg-gray-800 rounded-lg shadow-lg p-8">
+          <div className="bg-forest-green rounded-lg shadow-lg p-8">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                  California State University, Fullerton
+                <h3 className="text-2xl font-bold text-white mb-2">
+                  California State University - Fullerton
                 </h3>
-                <p className="text-xl text-forest-green dark:text-white font-semibold mb-2">
+                <p className="text-xl text-white font-semibold mb-2">
                   Bachelor of Science in Computer Science
                 </p>
-                <div className="flex flex-wrap gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
+                <div className="flex flex-wrap gap-4 text-sm text-white/80 mb-4">
                   <div className="flex items-center">
                     <GraduationCap className="w-5 h-5 mr-2" />
                     Expected Graduation: May 2026
@@ -53,54 +53,54 @@ const Education = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                <BookText className="w-5 h-5 mr-2" />
+                <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <BookText className="w-5 h-5 mr-2" />
                   Relevant Coursework
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     Artificial Intelligence
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     Algorithm Engineering
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     Software Engineering
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     Operating Systems
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     Database Systems
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+                <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
                   <Landmark className="w-5 h-5 mr-2" />
                   Organizations
                 </h4>
                 <ul className="space-y-2">
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     Theta Tau - Engineering Society (PNM President)
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     PASA (Pilipinx-American Student Association)
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     VSA (Vietnamese Student Union)
                   </li>
-                  <li className="text-gray-600 dark:text-gray-300 flex items-start">
-                    <span className="text-forest-green dark:text-white mr-2 mt-1 flex-shrink-0">•</span>
+                  <li className="text-white/90 flex items-start">
+                    <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
                     ACM (Association for Computing Machinery)
                   </li>
                 </ul>

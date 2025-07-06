@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: <Download className="w-6 h-6" />,
       name: 'Resume',
-      url: '/resume/resume.pdf',
+      url: '/brianngo_resume_2025.pdf',
       color: 'hover:text-forest-green'
     }
   ]
@@ -60,20 +60,20 @@ const Contact = () => {
               <motion.a
                 key={link.name}
                 href={link.url}
-                target={link.url.startsWith('http') ? '_blank' : undefined}
-                rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`flex flex-col items-center p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 min-h-[116px] ${link.subtext ? '' : 'justify-center'}`}
+                className={`flex flex-col items-center p-4 bg-forest-green rounded-lg shadow-md hover:shadow-lg transition-all duration-300 min-h-[116px] ${link.subtext ? '' : 'justify-center'}`}
               >
-                <div className="text-forest-green dark:text-white mb-2">
+                <div className="text-white mb-2">
                   {link.icon}
                 </div>
-                <span className="font-medium text-gray-900 dark:text-white">
+                <span className="font-medium text-white">
                   {link.name}
                 </span>
                 {link.subtext && (
-                  <span className="text-xs text-gray-600 dark:text-gray-400 mt-1 text-center break-words break-all px-2">
+                  <span className="text-xs text-white/80 mt-1 text-center break-words break-all px-2">
                     {link.subtext}
                   </span>
                 )}
