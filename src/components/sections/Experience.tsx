@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Calendar, Trophy } from 'lucide-react'
 import { Experience as ExperienceType } from '@/data/types'
+import Image from 'next/image'
 
 const Experience = () => {
   const experiences: ExperienceType[] = [
@@ -98,10 +99,10 @@ const Experience = () => {
               {/* Timeline dot */}
               <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-forest-green rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
 
-              <div className={`ml-12 md:ml-0 md:w-1/2 ${
-                index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
+              <div className={`ml-12 md:ml-0 md:w-[50%] ${
+                index % 2 === 0 ? 'md:pr-10' : 'md:pl-10'
               }`}>
-                <div className="bg-forest-green rounded-lg p-6 shadow-lg">
+                <div className={`bg-forest-green rounded-lg p-6 shadow-lg ${index % 2 === 0 ? 'md:-mr-40' : 'md:-ml-40'}`}>
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-white mb-1">
@@ -153,6 +154,23 @@ const Experience = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Logo occupying the blank side only for PNM President */}
+              {experience.position.includes('PNM President') && (
+                <div
+                  className={`hidden md:flex justify-end px-10 ${
+                    index % 2 === 0 ? 'order-first' : 'order-last'
+                  }`}
+                >
+                  <Image
+                    src="/images/homepage/csufthetatau_logo.jpg"
+                    alt="Theta Tau logo"
+                    width={360}
+                    height={360}
+                    className="rounded-lg"
+                  />
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>
