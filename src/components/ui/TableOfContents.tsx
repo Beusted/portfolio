@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import { Home, User, Code, Briefcase, Landmark, GraduationCap, Smartphone } from 'lucide-react'
 
 interface Section {
