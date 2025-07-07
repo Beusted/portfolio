@@ -6,10 +6,12 @@ import Projects from '@/components/sections/Projects'
 import Experience from '@/components/sections/Experience'
 import Education from '@/components/sections/Education'
 import Contact from '@/components/sections/Contact'
+import TableOfContents from '@/components/ui/TableOfContents'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <TableOfContents />
       <Header />
       <Hero />
       <About />

@@ -20,16 +20,17 @@ const Header = () => {
   }, [])
 
   const navItems = [
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Blogs', href: '/blogs' },
+    { name: 'Resume', href: '/brianngo_resume_2025.pdf' },
+  ]
+
+  const moreItems = [
     { name: 'About', href: '/#about' },
     { name: 'Projects', href: '/#projects' },
     { name: 'Experience', href: '/#experience' },
     { name: 'Education', href: '/#education' },
     { name: 'Contact', href: '/#contact' },
-    { name: 'Resume', href: '/brianngo_resume_2025.pdf' },
-  ]
-
-  const moreItems = [
-    { name: 'Gallery', href: '/gallery' },
   ]
 
   return (

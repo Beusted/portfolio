@@ -22,7 +22,7 @@ const Bubble = ({ delay = 0, size = 'w-32 h-32', style }: { delay?: number; size
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Decorative Bubbles */}
       <div className="absolute inset-0 pointer-events-none">
         <Bubble delay={0} size="w-64 h-64" style={{ top: '10%', left: '15%' }} />
