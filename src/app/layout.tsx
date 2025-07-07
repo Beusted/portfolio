@@ -88,7 +88,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-black text-white antialiased min-h-screen`}>
         <div className="stars" aria-hidden="true" />
         <main className="relative z-10">
-          {children}
+          <div className="min-h-screen">
+            {children}
+          </div>
         </main>
       </body>
     </html>

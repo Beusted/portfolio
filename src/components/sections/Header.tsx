@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { personalData } from '@/data/personal'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -9,7 +9,6 @@ import Image from 'next/image'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMoreOpen, setIsMoreOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,17 +19,10 @@ const Header = () => {
   }, [])
 
   const navItems = [
+    { name: 'Home', href: '/' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Blogs', href: '/blogs' },
     { name: 'Resume', href: '/brianngo_resume_2025.pdf' },
-  ]
-
-  const moreItems = [
-    { name: 'About', href: '/#about' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Experience', href: '/#experience' },
-    { name: 'Education', href: '/#education' },
-    { name: 'Contact', href: '/#contact' },
   ]
 
   return (
@@ -67,36 +59,6 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-
-            {/* More dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsMoreOpen(true)}
-              onMouseLeave={() => setIsMoreOpen(false)}
-            >
-              <button className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors font-medium">
-                <span>More</span>
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform ${isMoreOpen ? 'rotate-180' : ''}`}
-                />
-              </button>
-              {isMoreOpen && (
-                <div className="absolute right-0 top-full w-40 rounded-md bg-black/95 backdrop-blur-md shadow-lg">
-                  {moreItems.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="block px-4 py-2 text-right"
-                    >
-                      <span className="inline-block rounded-lg bg-white/10 px-3 py-1 text-gray-300 hover:bg-white/20 hover:text-white transition-colors">
-                        {item.name}
-                      </span>
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -115,7 +77,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 w-full">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95 backdrop-blur-md shadow-lg">
-              {[...navItems, ...moreItems].map((item) => (
+              {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
