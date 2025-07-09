@@ -10,8 +10,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Brian Ngo - Computer Science Student',
-    template: '%s | Brian Ngo - Computer Science Student'
+    default: 'Brian Ngo - Software Engineer, AI / ML Enthusiast',
+    template: '%s | Brian Ngo - Software Engineer, AI / ML Enthusiast'
   },
   description: 'Computer Science student at Cal State Fullerton specializing in full-stack development, AI/ML, and scalable applications. Expected graduation May 2026.',
   keywords: [
@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     'javascript',
     'web development',
     'frontend developer',
+    'ai',
+    'ml',
+    'artificial intelligence',
+    'machine learning',
+    'ai engineer',
+    'ml engineer',
+    'ai developer',
     'backend developer',
     'portfolio'
   ],
@@ -49,7 +56,7 @@ export const metadata: Metadata = {
     description: 'Computer Science student at Cal State Fullerton specializing in AI and ML. View my projects, experience, and get in touch with me!',
     images: [
       {
-        url: 'https://brianngo.dev/mirrorselfie.jpg',
+        url: 'https://www.ngobrian.dev/_next/image?url=%2Fimages%2Fgallery%2Fmirrorselfie.jpg&w=750&q=75',
         width: 1200,
         height: 630,
         alt: 'Brian Ngo - Software Engineer, AI / ML Enthusiast',
