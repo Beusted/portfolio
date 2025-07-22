@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: 'Computer Science student at Cal State Fullerton specializing in AI and ML. View my projects, experience, and get in touch with me!',
     images: [
       {
-        url: 'https://www.ngobrian.dev/_next/image?url=%2Fimages%2Fgallery%2Fmirrorselfie.jpg&w=750&q=75',
+        url: '/images/homepage/mirrorselfie.jpg',
         width: 1200,
         height: 630,
         alt: 'Brian Ngo - Software Engineer, AI / ML Enthusiast',
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: 'Brian Ngo - Software Engineer, AI / ML Enthusiast',
     description: 'Computer Science student specializing in AI andML!',
     creator: '@ngobrian',
-    images: ['https://brianngo.dev/og-image.jpg'],
+    images: ['/images/homepage/mirrorselfie.jpg'],
   },
   verification: {
     google: 'your-google-site-verification',
