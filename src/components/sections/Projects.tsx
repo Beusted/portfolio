@@ -32,6 +32,15 @@ const Projects = () => {
       githubUrl: 'https://github.com/Beusted/ZeroSpam',
       featured: true,
       completedAt: '2025-05-22'
+    },
+    {
+      id: '4',
+      title: 'Duckling | Supplier Diversity',
+      description: 'Developed a comprehensive email spam filtering system as a capstone project for computer science coursework. Built an interactive web application using Streamlit that implements machine learning classification algorithms to automatically detect and filter spam emails.',
+      technologies: ['Python', 'Streamlit', 'Scikit-learn', 'pandas', 'numpy', 'NLTK', 'Naive Bayes', 'Git'],
+      githubUrl: 'https://github.com/Beusted/ZeroSpam',
+      featured: true,
+      completedAt: '2025-05-22'
     }
   ]
 

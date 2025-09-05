@@ -9,17 +9,18 @@ const Experience = () => {
   const experiences: ExperienceType[] = [
     {
       id: '1',
-      company: 'NTL Precision',
-      position: 'Software Engineer Intern - Data Systems',
+      company: 'Verdantic',
+      position: 'Founder',
       startDate: '2025-06-02',
-      endDate: '2025-08-31',
+      endDate: 'Present',
       description: 'Designed and implemented scalable full-stack ERP platform using Next.js/React/TypeScript, achieving significant performance improvements and code reduction.',
       technologies: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Supabase'],
       achievements: [
-        'Achieved 83% code reduction through modular architecture and component reusability',
-        'Reduced query latency from 10s to 1s (10x improvement) through database optimization',
-        'Eliminated N+1 queries through batch fetching and Map-based lookup tables',
-        'Delivered end-to-end user experience with responsive design and real-time search'
+        'Licensed to a manufacturing company in Silicon Valley.',
+        'Reduced client team workload by 66%, enabling employees to reallocate time toward higher-value projects.',
+        'Designed and implemented a scalable full-stack ERP platform using Next.js/React/TypeScript, which achieved 83% code reduction through modular architecture and component reusability across order management, production, and inventory systems.',
+        'Engineering a high-performance database layer with PostgreSQL/Supabase, eliminating N+1 queries through batch fetching and implemented Map-based lookup tables to enhance data retrieval loading time from 40 seconds to 3 seconds.',
+        'Delivering an end-to-end user experience with responsive design, real-time search algorithms, and automated workflow orchestration, which drove operational efficiency across the manufacturing pipeline'
       ]
     },
     {
@@ -36,9 +37,24 @@ const Experience = () => {
         'Collaborated closely with fellow board members on key initiatives',
         'Successfully guided team members and answered questions to empower success'
       ]
+    },
+    {
+      id: '3',
+      company: 'AWS AI Summer Camp',
+      position: 'Attendee',
+      startDate: '2025-07-27',
+      endDate: '2025-08-31',
+      description: 'Led as central support figure for the team, guiding peers and empowering others to succeed through consistent leadership.',
+      technologies: ['Leadership', 'Project Management', 'AWS', 'Python', 'Streamlit', 'Plotly', 'Scikit-Learn', 'Retrieval-Augmented Generation (RAG)'],
+      achievements: [
+        'Developed and deployed an end-to-end AI platform using Python, Streamlit, and Plotly, delivering real-time procurement analytics via a responsive, full-stack web interface.',
+        'Implemented a TF-IDF + cosine similarity engine (Scikit-Learn) to vectorize and compare over 300K procurement records, boosting supplier matching accuracy with >0.4 similarity thresholds.',
+        'Addressed critical supplier diversity challenges and solved procurement inefficiency for local small businesses around Cal Poly SLO by developing an AI solution that automates the supplier discovery process, previously reliant on manual research, to help increase their small business participation towards their desired goal.',
+        'Architected a scalable serverless pipeline using AWS S3, Lambda, and Bedrock Claude 3.0 with Retrieval-Augmented Generation (RAG) to power a context-aware procurement recommendation chatbot'
+      ]
     }
   ]
-
+ 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -117,9 +133,9 @@ const Experience = () => {
                   <div className="flex items-center text-sm text-white/80 mb-4">
                     <Calendar className="w-4 h-4 mr-1" />
                     {new Date(experience.startDate).toLocaleDateString()} - {
-                      experience.endDate 
-                        ? new Date(experience.endDate).toLocaleDateString()
-                        : 'Present'
+                      experience.endDate === 'Present' || !experience.endDate
+                        ? 'Present'
+                        : new Date(experience.endDate).toLocaleDateString()
                     }
                   </div>
 
