@@ -64,19 +64,19 @@ const Education = () => {
                   </li>
                   <li className="text-white/90 flex items-start">
                     <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
-                    Algorithm Engineering
+                    Natural Language Processing
                   </li>
                   <li className="text-white/90 flex items-start">
                     <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
-                    Software Engineering
+                    Edge AI
                   </li>
                   <li className="text-white/90 flex items-start">
                     <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
-                    Operating Systems
+                    Machine Learning
                   </li>
                   <li className="text-white/90 flex items-start">
                     <span className="text-white mr-2 mt-1 flex-shrink-0">•</span>
-                    Database Systems
+                    Algorithms Engineering 
                   </li>
                 </ul>
               </div>
