@@ -20,6 +20,7 @@ export interface Project {
     description: string
     technologies: string[]
     achievements: string[]
+    image?: string
   }
   
   export interface Skill {
