@@ -22,7 +22,7 @@ export default function Home() {
       <Contact />
       <footer className="py-8 text-center text-gray-600 dark:text-gray-400">
         <p className="text-sm">
-          Engineered by Brian Ngo :) | Last Updated: July 2025
+          Engineered by Brian Ngo :) | Last Updated: November 2025
         </p>
       </footer>
     </main>
