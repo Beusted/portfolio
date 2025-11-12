@@ -31,16 +31,26 @@ const Projects = () => {
       technologies: ['Python', 'Streamlit', 'Scikit-learn', 'pandas', 'numpy', 'NLTK', 'Naive Bayes', 'Git'],
       githubUrl: 'https://github.com/Beusted/ZeroSpam',
       featured: true,
-      completedAt: '2025-05-22'
+      completedAt: '2025-05-22',
+      hidden: true
     },
     {
       id: '4',
-      title: 'Duckling | Supplier Diversity',
+      title: 'AWS: Duckling Supplier Diversity',
       description: 'Developed a comprehensive email spam filtering system as a capstone project for computer science coursework. Built an interactive web application using Streamlit that implements machine learning classification algorithms to automatically detect and filter spam emails.',
       technologies: ['Python', 'Streamlit', 'Scikit-learn', 'pandas', 'numpy', 'NLTK', 'Naive Bayes', 'Git'],
       githubUrl: 'https://github.com/Beusted/ZeroSpam',
       featured: true,
       completedAt: '2025-05-22'
+    },
+    {
+      id: '5',
+      title: 'Talk-To-Me:Real-Time Multilingual Translator',
+      description: 'Built a real-time multilingual voice translation platform with 2 operational modes (single-device and multi-user), integrating 3 AI models (Deepgram STT, GPT-3.5 for translation, OpenAI TTS) to enable live conversations across 5 languages with sub-100ms transcription latency. Won 2nd place in LiveKit\'s "Most Advanced Use of LiveKit" category at CalHacks 12.0.',
+      technologies: ['Next.js 15', 'React 19', 'TypeScript', 'Python', 'Deepgram STT', 'OpenAI TTS', 'LiveKit', 'JWT'],
+      githubUrl: 'https://github.com/Beusted/talk-to-me',
+      featured: true,
+      completedAt: '2025-10-26'
     }
   ]
 
@@ -90,7 +100,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-          {projects.map((project) => (
+          {projects.filter(project => !project.hidden).map((project) => (
             <motion.div
               key={project.id}
               variants={itemVariants}

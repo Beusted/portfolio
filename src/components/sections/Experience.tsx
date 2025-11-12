@@ -53,6 +53,23 @@ const Experience = () => {
         'Engineering a high-performance database layer with PostgreSQL/Supabase, eliminating N+1 queries through batch fetching and implemented Map-based lookup tables to enhance data retrieval loading time from 40 seconds to 3 seconds.',
         'Delivering an end-to-end user experience with responsive design, real-time search algorithms, and automated workflow orchestration, which drove operational efficiency across the manufacturing pipeline'
       ]
+    },
+    {
+      id: '4',
+      company: 'CalHacks 12.0',
+      position: 'Hacker',
+      startDate: '2025-10-24',
+      endDate: '2025-10-26',
+      description: 'Built a real-time multilingual voice translation platform enabling live conversations across 5 languages with advanced AI integration and WebRTC audio streaming.',
+      technologies: ['Next.js 15', 'React 19', 'TypeScript', 'Python', 'WebRTC', 'Deepgram STT', 'GPT-3.5', 'OpenAI TTS', 'LiveKit', 'JWT'],
+      achievements: [
+        'Won 2nd place in LiveKit\'s "Most Advanced Use of LiveKit" category.',
+        'Atteneded an Invite-Only Y Combinator\'s Networking Event.',
+        'Built a real-time multilingual voice translation platform with 2 operational modes (single-device and multi-user), integrating 3 AI models (Deepgram STT, GPT-3.5 for translation, OpenAI TTS) to enable live conversations across 5 languages with sub-100ms transcription latency',
+        'Developed full-stack application using Next.js 15/React 19 frontend (2,300+ lines across 21 TypeScript components) and Python backend with WebRTC audio streaming, achieving 40fps speaker visualizations through volume-based exponential smoothing',
+        'Engineered real-time state synchronization system with 11-action reducer pattern and LiveKit participant attributes for dynamic translator instantiation, enabling just-in-time language switching and audio routing across concurrent users',
+        'Implemented token-based access control with JWT authentication, role-based publishing permissions, and RPC-enabled client-server communication to manage audio track filtering and participant-specific caption rendering'
+      ]
     }
   ]
  
