@@ -39,6 +39,7 @@ export default function GalleryPage() {
               >
                 {/\.heic$/i.test(file) ? (
                   // Fallback to native <img> for HEIC files, since Next.js Image optimization doesn't support them
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={`/images/gallery/${file}`}
                     alt={file.replace(/[-_]/g, ' ').split('.')[0]}
