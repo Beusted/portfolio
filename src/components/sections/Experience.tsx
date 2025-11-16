@@ -8,6 +8,19 @@ import Image from 'next/image'
 const Experience = () => {
   const experiences: ExperienceType[] = [
     {
+      id: '5',
+      company: 'NEX',
+      position: 'Software Engineering Internship',
+      startDate: '2025-10-01',
+      endDate: 'Present',
+      description: 'Implemented centralized pricing systems and built high-performance web scraping tools with advanced anti-detection capabilities.',
+      technologies: ['Python', 'Selenium', 'API Development', 'Web Scraping', 'Automation'],
+      achievements: [
+        'Implemented centralized pricing system with multiple strategies (flat-rate, resolution-based, time-based) and complexity multipliers, adding cost breakdowns and usage tracking to API responses.',
+        'Built a high-performance Pinterest web scraper using Python and Selenium that extracts high-resolution images with anti-detection features (randomized human-like behavior, proxy rotation), multi-instance support, and automated Chrome profile generation, successfully scraping thousands of images across multiple keywords with real-time CSV export.'
+      ]
+    },
+    {
       id: '1',
       company: 'Theta Tau, Phi Epsilon Chapter',
       position: 'PNM President',

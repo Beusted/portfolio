@@ -16,7 +16,7 @@ const TableOfContents = () => {
   const sections: Section[] = [
     { id: 'hero', title: 'Home', icon: <Home className="w-4 h-4" /> },
     { id: 'about', title: 'About', icon: <User className="w-4 h-4" /> },
-    { id: 'skills', title: 'Skills', icon: <Code className="w-4 h-4" /> },
+    // { id: 'skills', title: 'Skills', icon: <Code className="w-4 h-4" /> },
     { id: 'projects', title: 'Projects', icon: <Briefcase className="w-4 h-4" /> },
     { id: 'experience', title: 'Experience', icon: <Landmark className="w-4 h-4" /> },
     { id: 'education', title: 'Education', icon: <GraduationCap className="w-4 h-4" /> },
